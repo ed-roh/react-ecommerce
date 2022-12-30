@@ -14,6 +14,20 @@ function Navbar() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart.cart);
+  const [items, setItems] = useState()
+
+  async function getItems() {
+    const items = await fetch(
+      "http://localhost:2000/api/items?populate=image",
+      { method: "GET" }
+    );
+    const itemsJson = await items.json();
+    dispatch(setItems(itemsJson.data));
+  }
+
+  useEffect(() => {
+    getItems();
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <Box
