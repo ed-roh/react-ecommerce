@@ -57,7 +57,7 @@ const Products = () => {
         <div className='products-container'>
             <div className='filter-container'>
                 <Typography variant="h2" color="initial">Filters</Typography>
-                <Typography variant="h4" color="initial">Status</Typography>
+                <Typography variant="h4" color="initial">Statu</Typography>
                 <FormGroup>
       <FormControlLabel
         control={<Checkbox checked={aliveChecked} />}

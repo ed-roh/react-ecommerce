@@ -8,7 +8,7 @@ const MyItem = ({item}) => {
     </div>
     <div className='card__content-container'>
       <p>{item.name}</p>
-      <p style={{color:item.status === 'Alive'? 'green':item.status === 'Dead'? 'red':'black'}}>{item.status}</p>
+      <p style={{color:item.status === 'Alive'? 'green':item.status === 'Dead'? 'yellow':'black'}}>{item.status}</p>
     </div>
 
     </div>
