@@ -1,0 +1,21 @@
+.card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card__image-container{
+    width:100%;
+}
+.card__content-container img{
+    width:100%;
+    object-fit: cover;
+}
+.card__content-container{
+padding:0 1rem;
+display:flex;
+align-items: center;
+justify-content: space-between;
+width:100%;
+}
