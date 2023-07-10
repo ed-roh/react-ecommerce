@@ -6,6 +6,7 @@ import {
   MenuOutlined,
   SearchOutlined,
 } from "@mui/icons-material";
+import ChurchIcon from '@mui/icons-material/Church';
 import { useNavigate } from "react-router-dom";
 import { shades } from "../../theme";
 import { setIsCartOpen } from "../../state";
@@ -77,6 +78,9 @@ function Navbar() {
           </Badge>
           <IconButton sx={{ color: "black" }}>
             <MenuOutlined />
+          </IconButton>
+          <IconButton sx={{ color: "black" }}>
+            <ChurchIcon onClick={() => navigate('/the-Products')} />
           </IconButton>
         </Box>
       </Box>
