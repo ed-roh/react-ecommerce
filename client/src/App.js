@@ -7,7 +7,7 @@ import ItemDetails from "./scenes/itemDetails/ItemDetails";
 import CartMenu from "./scenes/global/CartMenu";
 import Checkout from "./scenes/checkout/Checkout";
 import Confirmation from "./scenes/checkout/Confirmation";
-
+//hermano que onda
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
