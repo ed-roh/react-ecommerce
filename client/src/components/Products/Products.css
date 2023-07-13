@@ -1,0 +1,28 @@
+.products{
+    margin-top: 60px;
+    width:100%;
+    min-height: calc(100vh - 60px);
+    padding:1.5rem;
+}
+.products-container{
+    display:grid;
+    grid-template-columns: 20% 70%;
+    row-gap: 10%;
+    width:100%;
+    height:100%;
+}
+.filter-container{
+    padding:1.5rem;
+    display:flex;
+    flex-direction: column;
+}
+.products-wrapper{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(15rem,1fr));
+    place-items: center;
+    padding:1.5rem;
+    gap:1.5rem;
+    border:1px solid #eee;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px -2px 1px;
+}

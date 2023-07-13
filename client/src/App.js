@@ -8,6 +8,11 @@ import CartMenu from "./scenes/global/CartMenu";
 import Checkout from "./scenes/checkout/Checkout";
 import Confirmation from "./scenes/checkout/Confirmation";
 
+//hermano que onda, que onda hermano
+//ahora si o no
+import Products from "./components/Products/Products";
+
+
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -26,6 +31,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="the-Products" element={<Products />} />
           <Route path="item/:itemId" element={<ItemDetails />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="checkout/success" element={<Confirmation />} />
